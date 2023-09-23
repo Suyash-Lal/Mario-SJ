@@ -17,12 +17,12 @@ public class Mario_Movement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A))
         {
-            transform.position += Vector3.left * moveSpeed;
+            transform.position += Vector3.left * moveSpeed * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.position += Vector3.right * moveSpeed;
+            transform.position += Vector3.right * moveSpeed * Time.deltaTime;
         }
     }
 }
